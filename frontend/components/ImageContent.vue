@@ -30,6 +30,13 @@
 	>
 		>>
 	</button>
+	<!-- GenerateGif -->
+	<GenerateGif
+		:image-data="imageData"
+		:title="title"
+		style="margin-top: 15px;"
+	/>
+	<!--
 	<a
 		:href="'data:image/gif; base64,' + imageData[currentIndex]"
 		:download="'graph-image-' + slugify(title) + currentIndex + 1 + '.gif'"
@@ -51,13 +58,19 @@
 			/>
 		</svg>
 	</a>
+	--->
 </template>
 <script>
+import GenerateGif from './GenerateGif.vue'; // Import the GenerateGif component
+
 export default {
 	name: 'ImageContent',
+	components: {
+    	GenerateGif, // Register the GenerateGif component
+	},
 	props: {
 		imageData: {
-			type: Object,
+			type: Array,
 			required: true
 		},
 		title: {

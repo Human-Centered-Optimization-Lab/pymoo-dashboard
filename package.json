@@ -1,0 +1,7 @@
+
+{
+  "dependencies": {
+    "eslint": "^9.21.0",
+    "gifshot": "^0.4.5"
+  }
+}
