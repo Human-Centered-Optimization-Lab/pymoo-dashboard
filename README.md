@@ -8,7 +8,7 @@ _A tool to display live visualizations of your pymoo projects in real time_
 You will need to install Python (and preferably Anaconda). Once your environment is set up, you will need to run:
 
 ```shell
-pip install pymoo Flask 
+pip install -r requirements.txt 
 ```
 
 ### Node requirements
@@ -16,6 +16,9 @@ This project uses Node, Nuxt, and Vue to build its front end UI. So to start:
 1. Install Node.js
 2. Enter the front end directory `cd frontend`
 3. Run `npm install`
+
+### Linting Requirements
+This project uses ESLint to lint the front end code. If you are using VSCode, you can install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) to get linting in real time.
 
 ## Running for development
 
