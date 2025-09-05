@@ -33,7 +33,7 @@ For Unix based OSes
 ```
 ./build.sh
 ```
-
+Windows support coming soon.
 
 ## Deploying to pymoo
 
